@@ -1,10 +1,11 @@
-# Readme:
+### Readme:
 
 This depo contains 3 queries and results that were captured after running those queries. 
+
 The data source is accessible at https://beta.healthdata.gov/api/views/j8mb-icvb/rows.csv?accessType=DOWNLOAD
 The Data dictionary is accesible at: https://beta.healthdata.gov/dataset/COVID-19-Diagnostic-Laboratory-Testing-PCR-Testing/j8mb-icvb
 
-1) The total number of PCR tests performed as of yesterday in the United States.
+##1) The total number of PCR tests performed as of yesterday in the United States.
   -Author: Faruk Dziho
   -Date: 4/5/2022
   -Version: 1 
@@ -21,7 +22,7 @@ It is made easier because this value is already dynamic value, it is only partit
 So just summing all the results as of yesterday throughout the US gives us the information we need.
 
 
-2) The 10 states with the highest test positivity rate (positive tests / tests performed) for tests performed in the last 30 days.
+##2) The 10 states with the highest test positivity rate (positive tests / tests performed) for tests performed in the last 30 days.
   -Author: Faruk Dziho
   -Date: 4/5/2022
   -Version: 1 
@@ -69,7 +70,8 @@ VA	4.02382551521793
 
 The reason why Iowa leads the way is due to the fact that they were only reporting positive cases for the past 30 days. There was no movement in the number of Negative or inconclusive tests.
 
-3) The 7-day rolling average number of new cases per day for the last 30 days. 
+##3) The 7-day rolling average number of new cases per day for the last 30 days. 
+  
   -Author: Faruk Dziho
   -Date: 4/5/2022
   -Version: 1 

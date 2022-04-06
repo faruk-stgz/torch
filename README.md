@@ -11,13 +11,14 @@ The Data dictionary is accesible at: https://beta.healthdata.gov/dataset/COVID-1
   
   
 SumOfAllResults
-581306305
+850298480
 
 
-This query first finds the most recent date we have the data for, that isn't today. After that it is a simple summing operation 
-to capture the total number of test results reported at that particular date. It is made easier because this value is already dynamic 
-value, it is only partitioned by date, state and outcome of the test. So just summing all the results as of yesterday throughout the US 
-gives us the information we need.
+This query first finds the most recent date we have the data for, that isn't today for EACH state. Meaning - if I was only to look for the sum of results where date = '04-01-2022' I would most certainly miss states like Tenesee that are lagging and have data for 03-30 as the most recent.
+
+After that it is a simple summing operation to capture the total number of test results reported at that particular date. 
+It is made easier because this value is already dynamic value, it is only partitioned by date, state and outcome of the test. 
+So just summing all the results as of yesterday throughout the US gives us the information we need.
 
 
 2) The 10 states with the highest test positivity rate (positive tests / tests performed) for tests performed in the last 30 days.

@@ -66,6 +66,7 @@ VI	4.38829787234043
 NV	4.21501554864505
 VA	4.02382551521793
 
+The reason why Iowa leads the way is due to the fact that they were only reporting positive cases for the past 30 days. There was no movement in the number of Negative or inconclusive tests.
 
 3) The 7-day rolling average number of new cases per day for the last 30 days. 
   -Author: Faruk Dziho

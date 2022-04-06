@@ -1,4 +1,8 @@
-/*The 7-day rolling average number of new cases per day for the last 30 days. */
+/*The 7-day rolling average number of new cases per day for the last 30 days. 
+  -Author: Faruk Dziho
+  -Date: 4/5/2022
+  -Version: 1 
+*/
 
 DECLARE @37daysago as Date = (Select max(Cov.date) from Torch.CovidInfo Cov where Cov.Date < GETDATE()-37)
 DECLARE @30daysago as Date = (Select max(Cov.date) from Torch.CovidInfo Cov where Cov.Date < GETDATE()-30)

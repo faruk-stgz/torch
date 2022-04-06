@@ -1,4 +1,8 @@
-/*The 10 states with the highest test positivity rate (positive tests / tests performed) for tests performed in the last 30 days.*/
+/*The 10 states with the highest test positivity rate (positive tests / tests performed) for tests performed in the last 30 days.
+  -Author: Faruk Dziho
+  -Date: 4/5/2022
+  -Version: 1 
+*/
 
 DECLARE @30daysago as Date = (Select max(Cov.date) from Torch.CovidInfo Cov where Cov.Date < GETDATE()-30)
 
